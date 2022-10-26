@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "498214437365",
+    "project_id": "firestore-simple-crud",
+    "storage_bucket": "firestore-simple-crud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498214437365:android:e067c3c3630812979d60bc",
+        "android_client_info": {
+          "package_name": "com.samuelvialle.firestoresimplecrud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498214437365-sv3e82p7dl07ut3gm3qrc3dp2boi8oof.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzeZCw8tfFas2DUGlQLDXa_AQS_w8lfJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498214437365-sv3e82p7dl07ut3gm3qrc3dp2boi8oof.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
