@@ -17,13 +17,19 @@ d'authentification)
 
 ## 2 R : Read data from Firestore
 
- - Design d'activity_show_notes -> Ajouter un RecyclerView
- - Code ShowNotesActivity :
- - Liaison des widgets avec le code
- - Liaison avec la db
- - Création du layout de l'item du recyclerView
- - Ajout de l'adapter
- - Ajout du Model
+- Design d'activity_show_notes -> Ajouter un RecyclerView
+- Code ShowNotesActivity :
+- Liaison des widgets avec le code
+- Liaison avec la db
+- Création du layout de l'item du recyclerView
+- Ajout de l'adapter
+- Ajout du Model
+- Association au recycler
+
+## 3 U : Update data to existing ones
+
+- Ajout de la gestion du swipe to update
+- 
 
 
 

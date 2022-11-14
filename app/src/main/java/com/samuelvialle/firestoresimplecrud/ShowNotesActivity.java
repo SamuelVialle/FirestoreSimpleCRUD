@@ -6,6 +6,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -49,11 +50,9 @@ public class ShowNotesActivity extends AppCompatActivity {
         listNotes = new ArrayList<>();
         adapter = new AdpaterNotes(this, listNotes);
         rvShowNotes.setAdapter(adapter);
-
-        showData();
     }
 
-    private void showData() {
+    public void showData() {
         db.collection("Notes").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -88,9 +87,10 @@ public class ShowNotesActivity extends AppCompatActivity {
         initUI();
         initFirebase();
         initAdapter();
-
+        // Gestion du swipe
+        ItemTouchHelper touchHelper = new ItemTouchHelper(new TouchHelper(adapter));
+        touchHelper.attachToRecyclerView(rvShowNotes);
         // Afficher les données
-//        showData();
-
+        showData();
     }
 }
